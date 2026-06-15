@@ -1,0 +1,148 @@
+  P {
+    font-family: roboto, arial;
+  }
+
+  .title {
+  font-size: 28px;
+  display: inline-block;
+  font-weight: bold;
+  margin-left: 170px;
+  margin-top: 120px;
+  }
+
+  .title:hover {
+    cursor: pointer;
+  }
+
+  .watch-history {
+  height: 28px;
+  width: 185px;
+  font-weight: bold;
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 4px;
+  margin-left: 640px;
+  }
+
+  .watch-history:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+  }
+
+  .skillshare-logo {
+   width: 140px;
+  }
+
+  .heading1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+ .learning-button {
+  height: 28px;
+  width: 185px;
+  font-weight: bold;
+  background-color: white;
+  border: 1px black solid;
+  border-radius: 4px;
+ }
+
+ .heading2 {
+  margin-right: 525px;
+  margin-left: 0px;
+ }
+
+ .homepage {
+  width: 1550px;
+ }
+
+ .homepage-title {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+ }
+
+ .homepage-title:hover {
+  cursor: pointer;
+ }
+
+ .homepage-details {
+  color: white;
+  font-size: 18px;
+  width: 550px;
+ }
+
+ .homepage-logo {
+  width: 120px;
+ }
+
+ .watch-now {
+  font-family: roboto, arial;
+  width: 140px;
+  height: 40px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 6px;
+  background-color: rgb(2,255,132);
+  margin-top: 45px;
+ }
+
+ .watch-now:hover {
+  cursor: pointer;
+  background-color: rgba(2, 255, 133, 0.916);
+ }
+
+ .next-icon,
+ .point-icon,
+ .back-icon {
+  width: 40px;
+ }
+
+ .creative-interests {
+  font-size: 30px;
+  font-weight: bold;
+  margin-left: 170px;
+  
+ }
+
+ .add-more {
+  height: 32px;
+  width: 105px;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 5px;
+  margin-left: 740px;
+ }
+
+ .add-more:hover {
+  cursor: pointer;
+ }
+
+.Photography-button {
+  font-weight: bold;
+  height: 30px;
+  width: 120px;
+  margin-left: 180px;
+  background-color: white;
+  border-radius: 5px;
+  border-color: gray;
+}
+
+.staff-pick {
+  width: 100px;
+  margin-left: 10px;
+  font-weight: bold;
+  background-color: white;
+  border-radius: 5px;
+  border-color: gray;
+}
+
+.Photography-button:hover,
+.staff-pick:hover {
+  cursor: pointer;
+  background-color: rgb(0,35,52);
+  color: white;
+}

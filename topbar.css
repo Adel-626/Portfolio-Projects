@@ -1,0 +1,71 @@
+.skillshare-logo {
+  width: 130px;
+  padding-left: 20px;
+  position: relative;
+  left: -20px;
+ }
+
+ .skillshare-logo:hover,
+ .bell-icon:hover,
+ .profile:hover {
+  cursor: pointer;
+ }
+
+ .brower,
+ .learning-paths,
+ .live-sessions,
+ .my-classes {
+  font-family: Roboto, arial;
+  font-weight: bold;
+  color: white;
+  font-size: 16px;
+ }
+
+ .brower:hover,
+ .learning-paths:hover,
+ .live-sessions:hover,
+ .my-classes:hover {
+ cursor: pointer;
+ color: rgb(2,255,132);
+ }
+
+ .brower {
+  margin-left: 28px;
+ }
+
+ .learning-paths {
+  margin-left: 35px;
+ }
+
+ .search-bar {
+  flex: 1;
+  height: 33px;
+  width: 390px;
+  margin-left: 18px;
+  border: 2px white solid;
+  border-radius: 3px;
+  font-size: 16px;
+  padding-left: 10px;
+  color: white;
+  background-color: rgb(0,35,52);
+ }
+
+ .live-sessions {
+ margin-left: 415px;
+ }
+
+ .my-classes {
+  margin-left: 16px;
+ }
+
+ .profile {
+ width: 36px;
+ height: 36px;
+ border-radius: 18px;
+ margin-left: 15px;
+ }
+
+ .bell-icon {
+  width: 25px;
+  margin-left: 15px;
+ }

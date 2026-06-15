@@ -1,0 +1,110 @@
+.Main-box {
+  border: 1px none solid;
+  width: 270px;
+  border-radius: 10px;
+  height: 285px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15); 
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.first-image {
+  width: 270px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.students, 
+.time-limit {
+  font-size: 13px;
+  margin-top: 5px;
+  color: rgb(45, 45, 45);
+  margin-left: 10px;
+  margin-bottom: 0;
+  margin-right: 10px;
+}
+
+
+.class-title {
+  font-weight: bold;
+  font-size: 15px;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-bottom: 36px;
+}
+
+.Channel-name {
+  font-size: 13px;
+  color:  rgb(45, 45, 45);
+  margin-left: 10px;
+}
+
+.bookmark-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.small-change {
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 10px;
+}
+
+.small-change-2 {
+  font-weight: bold;
+  font-size: 15px;
+  margin-left: 10px;
+  margin-bottom: 0;
+}
+
+.home-page {
+  width: 1600px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.second-image {
+  width: 370px;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.another-class-title {
+ font-weight: bold;
+ color: white;
+ font-size: 19px;
+ width: 350px;
+ margin-top: 0;
+ margin-left: 10px;
+}
+
+.another-class {
+font-size: 14px;
+margin-left: 10px;
+margin-top: 50px;
+color: white;
+}
+
+.class-3 {
+  font-weight: bold;
+  padding: 3px;
+}
+
+.Learning-path-button {
+  height: 20px;
+  width: 100px;
+  font-family: roboto, arial;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+.Learning-path-button:hover {
+  cursor: pointer;
+}
+
+.another-class:hover {
+  cursor: pointer;
+}
