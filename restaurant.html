@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Restaurant Menu</title>
+    <style>
+      html,body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .logo{
+        height: 100px;
+        margin-top: -0px;
+        margin-right: -20px;
+        margin-left: 10px;
+      }
+      .top-bar{
+        background-color: rgb(222,170,121);
+        height: 100px;
+        display: flex;
+        margin-top: -10px;
+        margin-left: -10px;
+        margin-right: -10px;
+      }
+      .drop-button{
+        background-color: transparent;
+        border: none;
+        font-size: 20px;
+        color: rgb(0, 0, 0);
+        font-weight: bold;
+        margin-top: 25px;
+        margin-left: 50px;
+        height: 50px;
+      }
+      .dropdown{
+        position: relative;
+        display: inline-block;
+       }
+       .dropdown-content{
+        display: none;
+        position: absolute;
+        background-color: rgb(255, 253, 250);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0);
+        z-index: 1;
+        margin-left: 50px;
+       }
+       .dropdown-content a{
+        color: black;
+        padding: 7px 10px;
+        text-decoration: none;
+        display: block;
+       }
+       .dropdown:hover .dropdown-content {
+        display: block;
+       }
+       .main-image{
+        height: 600px;
+        margin-left: 420px;
+       }
+       .main-tagline{
+        font-size: 40px;
+        font-weight: bold;
+        width: 400px;
+        margin-top: 170px;margin-left: 70px;
+        color: rgb(248, 63, 63);
+       }
+       .following-tagline{
+        font-size: 20px;
+        width: 400px;
+        margin-left: 70px;
+        margin-top: -20px;
+       }
+       .search-bar{
+        height: 30px;
+        width: 350px;
+        margin-left: 70px;
+        border: none;
+        border-radius: 5px;
+        padding-left: 10px;
+       }
+       .wrapper{
+      display: flex;
+      width: 70%;
+      justify-content: space-around;
+      width: 1520px;
+    }
+    .card{
+      width: 300px;
+      height: 320px;
+      padding: 2rem 1rem;
+      background: #fff;
+      position: relative;
+      display: flex;
+      margin-right: 40px;
+      align-items: flex-end;
+      box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+      transition: 0.5s ease-in-out;
+      border-radius: 12px;
+    }
+    .card:hover{
+      transform: translateY(20px);
+    }
+    .card:before{
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(40, 40, 40, 0.5), rgb(15, 15, 14));
+      z-index: 2;
+      transition: 0.5s all;
+      opacity: 0;     
+    }
+    .card:hover:before{
+      opacity: 1;
+    }
+    .card img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .card .info{
+      position: relative;
+      z-index: 3;
+      color: #fff;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: 0.5, all;
+    }
+    .card:hover .info{
+      opacity: 1;
+      transform: translateY(0px);
+    }
+    .card .info h1{
+      margin: 0;
+    }
+    .card .info p{
+      letter-spacing: 1px;
+      font-size: 15px;
+      margin-top: 8px;
+      margin-bottom: 20px;
+    }
+    .card .info .btn{
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      background: #fff;
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.4s ease-in-out;
+      border-radius: 5px;
+    }
+    .card .info .btn:hover{
+      box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+      background-color: rgb(52,56,62);
+      color: white;
+    }
+    .most-recommended{
+      font-size: 40px;
+      font-weight: bold;
+      margin-left: 490px;
+      margin-bottom: 70px;
+    }
+    .heading-notice{
+        font-size: 20px;
+      }
+      .subline-notice{
+        font-size: 14px;
+        font-weight: lighter;  
+        margin-bottom: -15px;  
+        cursor: pointer; 
+      }
+      .subline-notice:hover{
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body style="background-color: rgb(255,230,169);">
+    <!--Top Search Bar -->
+    <div class="top-bar">
+      <div><img class="logo" src="Amazon/cooking.png"></div>
+        <div class="dropdown">
+          <button class="drop-button">Appetizers</button>
+          <div class="dropdown-content">
+            <a href="#">Aloo Tikki</a>
+            <a href="#">Paneer Tikka</a>
+            <a href="#">Hara Bhara Kebab</a>
+            <a href="#">Dahi Puri</a>
+            <a href="#">Bhel Puri</a>
+            <a href="#">Papdi Chaat</a>
+            <a href="#">Veg Pakora</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button style="width: 150px;" class="drop-button">Main Courses</button>
+          <div class="dropdown-content">
+            <a href="#">Paneer Butter Masala</a>
+            <a href="#">Chole Bhature</a>
+            <a href="#">Baingan Bharta</a>
+            <a href="#">Dal Makhani</a>
+            <a href="#">Malai Kofta</a>
+            <a href="#">Palak Paneer</a>
+            <a href="#">Rajma Chawal</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="drop-button">Desserts</button>
+          <div class="dropdown-content">
+            <a href="#">Gulab Jamun</a>
+            <a href="#">Jalebi</a>
+            <a href="#">Rasgulla</a>
+            <a href="#">Kheer</a>
+            <a href="#">Barfi</a>
+            <a href="#">Sandesh</a>
+            <a href="#">Gajar Halwa</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="drop-button">Drinks</button>
+          <div class="dropdown-content">
+            <a href="#">Lassi</a>
+            <a href="#">Masala Chai</a>
+            <a href="#">Filter Coffee</a>
+            <a href="#">Nimbu Pani</a>
+            <a href="#">Aam Panna</a>
+            <a href="#">Coconut Water</a>
+            <a href="#">Sugarcane Juice</a>
+          </div>
+        </div>
+        <div style="margin-left: 300px;" class="dropdown">
+          <button class="drop-button">Log in</button>
+          <div class="dropdown-content">
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="drop-button">Sign Up</button>
+          <div class="dropdown-content">
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="drop-button">Contact</button>
+          <div class="dropdown-content">
+          </div>
+        </div>
+    </div>
+    <!--Home Page -->
+    <div style="background-color: rgb(255,230,169); margin-left: -10px; margin-right: -10px; display: flex; height: 550px;">
+      <div>
+        <p class="main-tagline">Fresh, Flavorful, Unforgettable</p>
+        <p class="following-tagline">
+          From farm to fork, every dish is crafted to deliver freshness you can taste and flavors you’ll love.
+        </p>
+        <input class="search-bar" type="text" placeholder="Search">
+      </div>
+      <img class="main-image" src="Amazon/burger 3.png">  
+      </div>  
+    </div>
+   <!--Most recommended dishes-->
+    <div>
+      <div>
+        <p class="most-recommended">Most Recommended Dishes</p>
+      </div>     
+    </div>
+    <div style="display: flex;  margin-left: 30px;">
+      <div class="card">
+        <img style="border-radius: 10px;" src="Amazon/dish 1.jpg">
+        <div class="info">
+          <h1>Paneer Butter Masala</h1>
+          <p>&nbsp;4.5 ⭐</p>  
+          <p>&nbsp;Price: ₹200</p>        
+          <p>Creamy, mildly spiced tomato-based curry with soft paneer cubes.</p>
+          <div>
+            <a href="http://127.0.0.1:5500/Thankyou.html" class="btn">Order Now</a>
+          </div>         
+        </div>
+      </div>
+      <div class="card">
+        <img style="border-radius: 10px;" src="Amazon/dish 2.jpg">
+        <div class="info">
+          <h1>Masala Dosa</h1>
+          <p>&nbsp;4.5 ⭐</p> 
+          <p>&nbsp;Price: ₹180</p>         
+          <p>Crispy rice and lentil crepe filled with spiced mashed potatoes, served with coconut chutney and sambar.</p>
+          <div>
+            <a href="http://127.0.0.1:5500/Thankyou.html" class="btn">Order Now</a>
+          </div>         
+        </div>
+      </div>
+      <div class="card">
+        <img style="border-radius: 10px;" src="Amazon/dish 3.jpg">
+        <div class="info">
+          <h1>Chole Bhature</h1>
+          <p>&nbsp;4.5 ⭐</p>   
+          <p>&nbsp;Price: ₹100</p>      
+          <p>Spicy chickpea curry served with fluffy deep-fried bread (bhature).</p>
+          <div>
+            <a href="http://127.0.0.1:5500/Thankyou.html" class="btn">Order Now</a>
+          </div>         
+        </div>
+      </div>
+      <div class="card">
+        <img style="border-radius: 10px;" src="Amazon/dish 4.jpg">
+        <div class="info">
+          <h1>Biryani</h1>
+          <p>&nbsp;4.5 ⭐</p> 
+          <p>&nbsp;Price: ₹200</p>         
+          <p>Aromatic basmati rice cooked with choice of protein, spices, and fragrant saffron.</p>
+          <div>
+            <a href="http://127.0.0.1:5500/Thankyou.html" class="btn">Order Now</a>
+          </div>         
+        </div>
+      </div>
+    </div>
+    <div style="display: flex; margin-top: 50px; margin-left: 30px;">
+      <div class="card">
+        <img style="border-radius: 10px;" src="Amazon/dish 5.jpg">
+        <div class="info">
+          <h1>Pav Bhaji</h1>
+          <p>&nbsp;4.5 ⭐</p> 
+          <p>&nbsp;Price: ₹200</p>         
+          <p>Spicy, mashed vegetable curry served with buttered bread rolls (pav).</p>
+          <div>
+            <a href="http://127.0.0.1:5500/Thankyou.html" class="btn">Order Now</a>
+          </div>         
+        </div>
+      </div>
+      <div class="card">
+        <img style="border-radius: 10px;" src="Amazon/dish 6.jpg">
+        <div class="info">
+          <h1>Aloo Paratha</h1>
+          <p>&nbsp;4.5 ⭐</p> 
+          <p>&nbsp;Price: ₹200</p>         
+          <p>Stuffed flatbread filled with seasoned mashed potatoes, often served with yogurt and pickle.</p>
+          <div>
+            <a href="http://127.0.0.1:5500/Thankyou.html" class="btn">Order Now</a>
+          </div>         
+        </div>
+      </div>
+      <div class="card">
+        <img style="border-radius: 10px;" src="Amazon/dish 7.jpg">
+        <div class="info">
+          <h1>Dhokla</h1>
+          <p>&nbsp;4.5 ⭐</p> 
+          <p>&nbsp;Price: ₹200</p>         
+          <p>Steamed savory cakes made from fermented rice and chickpea batter, topped with mustard seeds and curry leaves.</p>
+          <div>
+            <a href="http://127.0.0.1:5500/Thankyou.html" class="btn">Order Now</a>
+          </div>         
+        </div>
+      </div>
+      <div class="card">
+        <img style="border-radius: 10px;" src="Amazon/dish 8.jpg">
+        <div class="info">
+          <h1>Malai Kofta</h1>
+          <p>&nbsp;4.5 ⭐</p> 
+          <p>&nbsp;Price: ₹200</p>         
+          <p>Soft dumplings made from paneer and potatoes in a rich, creamy tomato-based gravy.</p>
+          <div>
+            <a href="http://127.0.0.1:5500/Thankyou.html" class="btn">Order Now</a>
+          </div>         
+        </div>
+      </div>
+    </div>
+    <!--About Us-->
+    <div style="display: flex; background-color: rgb(222,170,121); color: white; margin-top: 40px; margin-left: -10px; margin-right: -30px;
+    padding-top: 50px; height: 350px;">
+      <div style="margin-left: 270px;">
+        <h4 class="headline-notice">About First Bites</h4>
+        <h6 class="subline-notice">Who we are</h6>
+        <h6 class="subline-notice">Work with us</h6>
+        <h6 class="subline-notice">Report Fraud</h6>
+      </div>
+      <div style="margin-left: 150px";>
+        <h4 class="headline-notice">About us</h4>
+        <h6 class="subline-notice">Facebook</h6>
+        <h6 class="subline-notice">Twitter</h6>
+        <h6 class="subline-notice">Instagram</h6>
+      </div class="subline-notice">
+      <div style="margin-left: 150px;">
+        <h4 class="headline-notice">Make Money with Us</h4>
+        <h6 class="subline-notice">Sell</h6>
+        <h6 class="subline-notice">Sell under Accelerator</h6>
+        <h6 class="subline-notice">Protect and Build Your Brand</h6>
+        <h6 class="subline-notice">Become an Affiliates</h6>
+        <h6 class="subline-notice">Fulfilment</h6>
+        <h6 class="subline-notice">Advertise Your Products</h6>
+      </div>
+      <div style="margin-left: 150px;">
+        <h4 class="headline-notice">Let Us Help You</h4>
+        <h6 class="subline-notice">Your Account</h6>
+        <h6 class="subline-notice">Recalls and Product Safety Alerts</h6>
+        <h6 class="subline-notice">100% Purchase Protection</h6>
+        <h6 class="subline-notice">App Download</h6>
+        <h6 class="subline-notice">Help</h6>
+      </div>
+    </div>
+  </body>
+</html>
